@@ -161,7 +161,7 @@ Hᴇʟᴘ : <b>Sᴇᴛᴛɪɴɢꜱ</b>
 •❅──────✧❅✦❅✧──────❅•</b>"""
 
 
-LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}"""
