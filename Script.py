@@ -232,11 +232,6 @@ Mᴏᴠɪᴇs Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Rᴇᴀsᴏɴ:
 🗂 𝗙𝗶𝗹𝗲: <b><font class=smcp>{file_name}</font></b>
 📀 𝗦𝗶𝘇𝗲: <b><font class=smcp>{file_size}</font></b>
 
-<b>🔰 Mʏ Nᴀᴍᴇ : <a href="https://t.me/{}">{}</a>
-🔰 Cʀᴇᴀᴛᴏʀ : <a href="https://t.me/N33VARP">Oᴡɴᴇʀ</a>
-🔰 Cʜᴀɴɴᴇʟ : <a href="https://t.me/MoviesDuniya4U">Lɪsᴛ</a>
-🔰 Gʀᴏᴜᴘ : <a href="https://t.me/+mXrs3YeOSD1lYjI1">Jᴏɪɴ</a></b>
-
 <b>💁‍♂️  Cᴏɴᴛᴀᴄᴛ & Sᴜᴘᴘᴏʀᴛ @N33VARP</b>"""
     
     IMDB_TEMPLATE_TXT = """
