@@ -1396,11 +1396,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "filters":
         buttons = [[
-            InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter')
+            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ', callback_data='autofilter')
         ],[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs', callback_data='global_filters')
+            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ', callback_data='global_filters')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1417,7 +1417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "global_filters":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters')
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='filters')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1433,23 +1433,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🛡 FIʟᴛᴇʀs 🛡', callback_data='filters'),
-            InlineKeyboardButton('🗂 Fɪʟᴇ Sᴛᴏʀᴇ 🗂', callback_data='store_file')
+            InlineKeyboardButton('✪ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ ✪', callback_data='stats')
         ], [
-            InlineKeyboardButton('♂️ Cᴏɴɴᴇᴄᴛɪᴏɴ ♂️', callback_data='coct'),
-            InlineKeyboardButton('🧊 Exᴛʀᴀ Mᴏᴅs 🧊', callback_data='extra')
+            InlineKeyboardButton('• ꜰɪʟᴛᴇʀꜱ •', callback_data='filters'),
+            InlineKeyboardButton('• ꜰɪʟᴇ ꜱᴛᴏʀᴇ •', callback_data='store_file')
         ], [
-            InlineKeyboardButton('📝 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇 ✏️', callback_data='tele'),
-            InlineKeyboardButton('🎵 𝐌𝐔𝐒𝐈𝐂 🎵', callback_data='song'), 
-            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort')
+            InlineKeyboardButton('📸  ᴛᴇʟᴇɢʀᴀᴘʜ  📸', callback_data='tele')
         ], [
-            InlineKeyboardButton('♻️ ꜱᴛɪᴄᴋᴇʀ ♻️', callback_data='sticker'), 
-            InlineKeyboardButton('❤‍🔥 ᴋᴀɴɢ ❤‍🔥', callback_data='kang') 
+            InlineKeyboardButton('• ᴄᴏɴɴᴇᴄᴛɪᴏɴ •️', callback_data='coct'),
+            InlineKeyboardButton('• ᴇxᴛʀᴀ ᴍᴏᴅꜱ •', callback_data='extra')
         ], [
-            InlineKeyboardButton('⚖️ 𝐑𝐔𝐋𝐄𝐒 ⚖️', callback_data='rule'), 
+            InlineKeyboardButton('🆎  ꜰᴏɴᴛ  🆎', callback_data='font')
         ], [
-            InlineKeyboardButton('💠 Sᴛᴀᴛᴜs 💠', callback_data='stats'), 
-            InlineKeyboardButton('🏚 𝐇𝐎𝐌𝐄 🏚', callback_data='start')
+            InlineKeyboardButton('• ʀᴜʟᴇꜱ •', callback_data='rule'), 
+            InlineKeyboardButton('• ꜱᴇᴛᴛɪɴɢꜱ •', callback_data='settings')
+        ], [
+        InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
