@@ -1652,10 +1652,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
-    elif query.data == "song":
+    elif query.data == "font":
             buttons = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KUSHALHK")
+                    InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1664,7 +1663,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_text(
-                text=(script.SONG_TXT),
+                text=(script.FONT_TXT),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )  
