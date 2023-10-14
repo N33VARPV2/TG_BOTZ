@@ -22,7 +22,7 @@ class script(object):
 
     ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/N33VARP">ɴ𝟹𝟹ᴠᴀʀᴘ</a></b>"""
     
-     SETTINGS_TXT = """
+    SETTINGS_TXT = """
 Hᴇʟᴘ : <b>Sᴇᴛᴛɪɴɢꜱ</b>
     
 ◈ sᴇᴛᴛɪɴɢs ɪs ᴍᴏsᴛ ɪᴍᴘᴏʀᴛᴀɴᴛ ғᴇᴀᴛᴜʀᴇ ɪɴ ᴛʜɪs ʙᴏᴛ.
