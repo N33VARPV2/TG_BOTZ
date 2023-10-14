@@ -8,7 +8,7 @@ class script(object):
     HELP_TXT = """<b>Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
  
     ABOUT_TXT = """
-<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/{}"></a>
+<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/{}">ʙᴏᴛ</a>
 ‣ ᴄʀᴇᴀᴛᴏʀ : <a href="https://t.me/N33VARP">ɴ𝟹𝟹ᴠᴀʀᴘ</a>
 ‣ ʟɪʙʀᴀʀʏ : <a href="https://pyrogram.org/">ᴘʏʀᴏɢʀᴀᴍ</a>
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ</a>
