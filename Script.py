@@ -7,14 +7,14 @@ class script(object):
 
     HELP_TXT = """<b>Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
  
-    ABOUT_TXT = """<b>
-‣ Mʏ Nᴀᴍᴇ : <a href="https://t.me/{}">{}</a>
-‣ Cʀᴇᴀᴛᴏʀ : <a href="https://t.me/N33VARP">ɴ𝟹𝟹ᴠᴀʀᴘ</a>
-‣ Lɪʙʀᴀʀʏ : <a href="https://pyrogram.org/">Pʏʀᴏɢʀᴀᴍ</a>
-‣ Lᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/">Pʏᴛʜᴏɴ</a>
-‣ Dᴀᴛᴀ Bᴀsᴇ : <a href="https://www.mongodb.com/">Mᴏɴɢᴏ DB</a>
-‣ Hᴏsᴛᴇᴅ Oɴ : <a href="https://render.com/">Rᴇɴᴅᴇʀ</a>
-‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ𝟹.𝟶 [Sᴛᴀʙʟᴇ]</b>"""
+    ABOUT_TXT = """
+<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/{temp.B_NAME}">{temp.B_NAME}</a>
+‣ ᴄʀᴇᴀᴛᴏʀ : <a href="https://t.me/N33VARP">ɴ𝟹𝟹ᴠᴀʀᴘ</a>
+‣ ʟɪʙʀᴀʀʏ : <a href="https://pyrogram.org/">ᴘʏʀᴏɢʀᴀᴍ</a>
+‣ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ</a>
+‣ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>
+‣ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href="https://heroku.com/">ʜᴇʀᴏᴋᴜ</a>
+‣ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : ᴠ.𝟹.𝟶 [ꜱᴛᴀʙʟᴇ]</b>"""
                   
     DISCLAIMER_TXT =  """<b>Tʜɪs Is Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ PʀᴏJᴇᴄᴛ.
 
@@ -35,7 +35,14 @@ Hᴇʟᴘ : <b>Sᴇᴛᴛɪɴɢꜱ</b>
 <b>Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ :</b>
 • /connect - ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ʙᴏᴛ
 • /settings - ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs ᴀs ʏᴏᴜʀ ᴡɪsʜ """
-                  
+
+    TELEGRAPH_TXT = """ Hᴇʟᴘ : <b>Tᴇʟᴇɢʀᴀᴘʜ</b>
+
+<b>Nᴏᴛᴇ</b>: ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘᴍꜱ. ᴀʟꜱᴏ ᴄᴀɴ ʙᴇ ᴜꜱᴇ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ.
+
+<b>Cᴏᴍᴍᴀɴᴅs & Usᴀɢᴇ :</b>
+• /telegraph - sᴇɴᴅ ᴍᴇ ᴘɪᴄᴛᴜʀᴇ ᴏʀ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 𝟻ᴍʙ"""
+
     MANUELFILTER_TXT = """Hᴇʟᴘ : <b>Fɪʟᴛᴇʀꜱ</b>
     
 ◈ ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ.
@@ -126,9 +133,7 @@ Hᴇʟᴘ : <b>Sᴇᴛᴛɪɴɢꜱ</b>
 • /imdb  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.
 • /search  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ."""
 
-    ADMIN_TXT = """Hᴇʟᴘ : <b>Aᴅᴍɪɴ Mᴏᴅs</b>
-    
-<b>Nᴏᴛᴇ :</b> Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs.
+    ADMIN_TXT = """<b>Nᴏᴛᴇ :</b> Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs.
 
 <b>Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ :</b>
 • /logs - ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇᴄᴇɴᴛ ᴇʀʀᴏʀꜱ
@@ -152,11 +157,11 @@ Hᴇʟᴘ : <b>Sᴇᴛᴛɪɴɢꜱ</b>
  
     STATUS_TXT = """<b>⍟─────[ <b>Bᴏᴛ Sᴛᴀᴛᴜs</b> ]─────⍟
     
-★ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ :<code>{}</code>
-★ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ :<code>{}</code>
-★ ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ :<code>{}</code>
-★ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ:<code>{}</code>
-★ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ :<code>{}</code>
+★ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
+★ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>{}</code>
+★ ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ : <code>{}</code>
+★ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ: <code>{}</code>
+★ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
 
 •❅──────✧❅✦❅✧──────❅•</b>"""
 
