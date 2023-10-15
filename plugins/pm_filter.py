@@ -1175,7 +1175,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_reply_markup(reply_markup)
         if settings is not None:
             buttons = [
-                [buttons = [
                 [
                     InlineKeyboardButton('Rᴇsᴜʟᴛ Pᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
