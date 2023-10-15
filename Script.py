@@ -259,9 +259,9 @@ IMDb Data:
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 ⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>
-📀 RunTime: <b>{runtime} Minutes</b>
-📆 Release Info : <b>{release_date}</b>
-🎛 Countries : <b>{countries}</b>
+<b>📀 RunTime: {runtime} Minutes</b>
+<b>📆 Release Info : {release_date}</b>
+<b>🎛 Countries : {countries}</b>
 
 Requested by : {message.from_user.mention}"""
 
