@@ -742,6 +742,9 @@ async def settings(client, message):
                     callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
             ],
+            [
+                InlineKeyboardButton(text="✗ Close ✗", callback_data="close_data")
+            ], 
         ]
 
         btn = [[
