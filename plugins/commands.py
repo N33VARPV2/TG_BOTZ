@@ -743,7 +743,7 @@ async def settings(client, message):
                 ),
             ],
             [
-                InlineKeyboardButton(text="✗ Close ✗", callback_data="close_data")
+                InlineKeyboardButton(text="⇋ ᴄʟᴏꜱᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ ⇋", callback_data="close_data")
             ]
         ]
 
