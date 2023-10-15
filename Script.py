@@ -263,7 +263,7 @@ IMDb Data:
 <b>📆 Release Info : {release_date}</b>
 <b>🎛 Countries : {countries}</b>
 
-Requested by : {message.from_user.mention}"""
+<b>👨‍💼 Requested by : {message.from_user.mention}</b>"""
 
     
     ALL_FILTERS = """
