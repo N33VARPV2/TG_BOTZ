@@ -37,7 +37,7 @@ async def telegraph_upload(bot, update):
             InlineKeyboardButton(text="ᴏᴘᴇɴ ʟɪɴᴋ", url=f"https://graph.org{response[0]}"),
             InlineKeyboardButton(text="ꜱʜᴀʀᴇ ʟɪɴᴋ", url=f"https://telegram.me/share/url?url=https://graph.org{response[0]}")
             ],[
-            InlineKeyboardButton(text="✖ ᴄʟᴏꜱᴇ ᴛʜɪꜱ ᴍᴇɴᴜ ✖", callback_data="close_data")
+            InlineKeyboardButton(text="⬴ ᴄʟᴏꜱᴇ ᴛʜɪꜱ ᴍᴇɴᴜ ⤀", callback_data="close_data")
             ]])
         )
     
