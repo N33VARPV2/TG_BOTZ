@@ -260,12 +260,12 @@ IMDb Data:
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)</b>
-☀️ Languages : <code>{languages}</code>
+<b>☀️ Languages : <code>{languages}</code></b>
 <b>📀 RunTime: {runtime} Minutes</b>
 <b>📆 Release Info : {release_date}</b>
 <b>🎛 Countries : {countries}</b>
 
-⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
+<b>⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥</b>
 
 
 <b>👨‍💼 Requested by : {message.from_user.mention}</b>"""
