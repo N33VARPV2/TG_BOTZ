@@ -53,7 +53,7 @@ async def give_filter(client, message):
             settings = await get_settings(message.chat.id)
             try:
                 if settings['auto_ffilter']:
-                    await give_filter(client, message)
+                    await auto_filter(client, message)
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
                 await save_group_settings(grpid, 'auto_ffilter', True)
@@ -147,9 +147,6 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-            ], 
-            [  
-                InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
             ]
         )
         btn.insert(0, [
@@ -403,21 +400,14 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                     InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-                ], 
-                [  
-                    InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
                 ]
             )
-
         else:
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                     InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-                ], 
-                [  
-                    InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
                 ]
             )
                 
@@ -428,9 +418,6 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-            ], 
-            [  
-                InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
             ]
         )
 
@@ -1925,9 +1912,6 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-            ], 
-            [  
-                InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
             ]
         )
     # if ENABLE_SHORTLINK == True:
