@@ -693,7 +693,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     search = FRESH.get(key)
     search = search.replace("_", " ")
     sea = ""
-    qualities_search = ["360", "360p", "360P", "576", "576p", "576P", "480", "480p", "480P", "720", "720p", "720P", "1080", "1080p", "1080P", "1440", " 1440p", "1440P", "2160", "2160p", "2160P"]
+    qualities_search = ["360", "360p", "360P", "480", "480p", "480P", "720", "720p", "720P", "1080", "1080p", "1080P", "1440", " 1440p", "1440P", "2160", "2160p", "2160P"]
     for x in range (len(qualities_search)):
         if qualities_search[x] in search:
             sea = qualities_search[x]
@@ -725,7 +725,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     files, _, _ = await get_search_results(chat_id, search, max_results=10)
     files = [file for file in files if re.search(seas, file.file_name, re.IGNORECASE)]
     
-    qual1 = "360" if qual == "360P" else "576" if seas == "576P" else "480" if seas == "480P" else "720" if seas == "720P" else "1080" if seas == "1080P" else "1440" if seas == "1440P" else "2160" if seas == "2160P" else ""
+    qual1 = "360" if qual == "360P" else "480" if seas == "480P" else "720" if seas == "720P" else "1080" if seas == "1080P" else "1440" if seas == "1440P" else "2160" if seas == "2160P" else ""
     search1 = f"{search1} {seas1}"
     BUTTONS1[key] = search1
     files1, _, _ = await get_search_results(chat_id, search1, max_results=10)
@@ -734,7 +734,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     if files1:
         files.extend(files1)
     
-    seas2 = "360p" if seas == "360P" else "576p" if seas == "576P" else "480p" if seas == "480P" else "720p" if seas == "720P" else "1080p" if seas == "1080P" else "1440p" if seas == "1440P" else "2160p" if seas == "2160P" else ""
+    seas2 = "360p" if seas == "360P" else "480p" if seas == "480P" else "720p" if seas == "720P" else "1080p" if seas == "1080P" else "1440p" if seas == "1440P" else "2160p" if seas == "2160P" else ""
     search2 = f"{search2} {qual2}"
     BUTTONS2[key] = search2
     files2, _, _ = await get_search_results(chat_id, search2, max_results=10)
