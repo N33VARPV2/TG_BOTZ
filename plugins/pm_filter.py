@@ -693,7 +693,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     search = FRESH.get(key)
     search = search.replace("_", " ")
     sea = ""
-    qualities_search = ["360", "360p", "360P", "576", "576p", "576P", "480", "480p", "480P, "720", "720p", "720P", "1080", "1080p", "1080P", "1440", " 1440p", "1440P", "2160", "2160p", "2160P"]
+    qualities_search = ["360", "360p", "360P", "576", "576p", "576P", "480", "480p", "480P", "720", "720p", "720P", "1080", "1080p", "1080P", "1440", " 1440p", "1440P", "2160", "2160p", "2160P"]
     for x in range (len(qualities_search)):
         if qualities_search[x] in search:
             sea = qualities_search[x]
