@@ -737,7 +737,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
 
 files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     
-    qual1 = "360" if seas == "360p" else "480" if seas == "480p" else "720" if seas == "720p" else "1080" if seas == "1080p" else "1440" if seas == "1440p" else "2160" if seas == "2160p" else ""
+    qual1 = "360" if qual == "360p" else "480" if seas == "480p" else "720" if seas == "720p" else "1080" if seas == "1080p" else "1440" if seas == "1440p" else "2160" if seas == "2160p" else ""
     search1 = f"{search1} {qual1}"
     BUTTONS1[key] = search1
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
@@ -745,7 +745,7 @@ files, offset, total_results = await get_search_results(chat_id, search, offset=
     if files1:
         files.extend(files1)
     
-    qual2 = "360p" if seas == "360P" else "480p" if seas == "480P" else "720p" if seas == "720P" else "1080p" if seas == "1080P" else "1440p" if seas == "1440P" else "2160p" if seas == "2160P" 
+    qual2 = "360p" if qual == "360P" else "480p" if seas == "480P" else "720p" if seas == "720P" else "1080p" if seas == "1080P" else "1440p" if seas == "1440P" else "2160p" if seas == "2160P" 
     search2 = f"{search2} {qual2}"
     BUTTONS2[key] = search2
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
