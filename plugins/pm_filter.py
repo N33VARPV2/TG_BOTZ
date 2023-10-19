@@ -739,8 +739,8 @@ files, offset, total_results = await get_search_results(chat_id, search, offset=
     
    #   qual1 = "360" if qual == "360p" else "480" if qual == "480p" else "720" if qual == "720p" else "1080" if qual == "1080p" else "1440" if qual == "1440p" else "2160" if qual == "2160p" else ""
   #  search1 = f"{search1} {qual1}"
-    qual1 = "360" if qual == "360p" else "480" if qual == "480p" else "720" if qual == "720p" else "1080" if qual == "1080p" else "1440" if qual == "1440p" else "2160" if qual == "2160p"
-    search1 = f"{search1} {qual1}"
+    qual1 = "360" if qual == "360p" else "480" if seas == "480p" else "720" if seas == "720p" else "1080" if seas == "1080p" else "1440" if seas == "1440p" else "2160" if seas == "2160p"
+    search1 = f"{search1} {seas1}"
     BUTTONS1[key] = search1
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     
