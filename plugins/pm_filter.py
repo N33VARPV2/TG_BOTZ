@@ -723,7 +723,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     BUTTONS0[key] = search
     
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
-     files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
+#    files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     
     qual1 = "360" if qual == "360P" else "480" if seas == "480P" else "720" if seas == "720P" else "1080" if seas == "1080P" else "1440" if seas == "1440P" else "2160" if seas == "2160P" else ""
     search1 = f"{search1} {seas1}"
@@ -738,7 +738,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     search2 = f"{search2} {qual2}"
     BUTTONS2[key] = search2
     files2, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
-      files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
+#    files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
   
     if files2:
         files.extend(files2)
