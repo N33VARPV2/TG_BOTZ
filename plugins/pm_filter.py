@@ -729,7 +729,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     search1 = f"{search1} {seas1}"
     BUTTONS1[key] = search1
     files1, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
-      files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
+#    files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     
     if files1:
         files.extend(files1)
