@@ -265,9 +265,6 @@ IMDb Data:
 <b>📆 Release Info : {release_date}</b>
 <b>🎛 Countries : {countries}</b>
 
-<b>⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥</b>
-
-
 <b>👨‍💼 Requested by : {message.from_user.mention}</b>"""
 
     
