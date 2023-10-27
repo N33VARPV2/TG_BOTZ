@@ -248,7 +248,7 @@ async def start(client, message):
                 protect_content=True, 
                 reply_markup=InlineKeyboardMarkup(
                     [ [
-                      InlineKeyboardButton("Get File", url=f"https://telegram.me/{temp.U_NAME}?start=files_{file_id}")
+                      InlineKeyboardButton("Get File", url=f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
                           ] ]   ) ) 
             await verify_user(client, userid, token)
         else:
