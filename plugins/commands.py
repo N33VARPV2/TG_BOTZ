@@ -235,7 +235,7 @@ async def start(client, message):
     elif data.split("-", 1)[0] == "verify":
         userid = data.split("-", 2)[1]
         token = data.split("-", 3)[2]
-        fileid = data.split("-", 3)[3]
+        file_id = data.split("-", 3)[3]
         if str(message.from_user.id) != str(userid):
             return await message.reply_text(
                 text="<b>Invalid link or Expired link !</b>",
@@ -248,7 +248,7 @@ async def start(client, message):
                 protect_content=True, 
                 reply_markup=InlineKeyboardMarkup(
                     [ [
-                      InlineKeyboardButton("Get File", url=f"https://telegram.me/{temp.U_NAME}?start=files_{fileid}")
+                      InlineKeyboardButton("Get File", url=f"https://telegram.me/{temp.U_NAME}?start=files_{file_id}")
                           ] ]   ) ) 
             await verify_user(client, userid, token)
         else:
