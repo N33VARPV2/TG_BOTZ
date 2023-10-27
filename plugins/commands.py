@@ -235,7 +235,8 @@ async def start(client, message):
     elif data.split("-", 1)[0] == "verify":
         userid = data.split("-", 2)[1]
         token = data.split("-", 3)[2]
-        file_id = data.split("-", 1)[1]
+        files_ = await get_file_details(file_id)
+#        file_id = data.split("-", 1)[1]
 #        files_ = await get_file_details(file_id)
         if str(message.from_user.id) != str(userid):
             return await message.reply_text(
