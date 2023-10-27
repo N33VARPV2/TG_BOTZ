@@ -236,7 +236,6 @@ async def start(client, message):
         userid = data.split("-", 2)[1]
         token = data.split("-", 3)[2]
         files_ = await get_file_details(file_id)
-        files = files_[0]
         if str(message.from_user.id) != str(userid):
             return await message.reply_text(
                 text="<b>Invalid link or Expired link !</b>",
