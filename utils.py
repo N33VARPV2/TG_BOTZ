@@ -469,15 +469,15 @@ async def get_shortlink(chat_id, link, second=False):
     if URL.startswith("shorturllink") or URL.startswith("terabox.in") or URL.startswith("urlshorten.in") or second:
         URL = SECOND_SHORTLINK_URL
         API = SECOND_SHORTLINK_API
-    if URL == "api.shareus.io":
+    if URL == "shrinkmeio":
         # method 1:
         # https = link.split(":")[0] #splitting https or http from link
         # if "http" == https: #if https == "http":
         #     https = "https"
         #     link = link.replace("http", https) #replacing http to https
-        # conn = http.client.HTTPSConnection("api.shareus.io")
+        # conn = http.client.HTTPSConnection("shrinkme.io")
         # payload = json.dumps({
-        #   "api_key": "4c1YTBacB6PTuwogBiEIFvZN5TI3",
+        #   "api_key": "115695ac8fddb3410ba5cc8d3bc69a5d5d22f85b",
         #   "monetization": True,
         #   "destination": link,
         #   "ad_page": 3,
@@ -639,7 +639,7 @@ async def get_verify_shorted_link(link):
         https = "https"
         link = link.replace("http", https)
 
-    if URL == "api.shareus.in":
+    if URL == "shrinkme.io":
         url = f"https://{URL}/shortLink"
         params = {"token": API,
                   "format": "json",
