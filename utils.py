@@ -469,7 +469,7 @@ async def get_shortlink(chat_id, link, second=False):
     if URL.startswith("shorturllink") or URL.startswith("terabox.in") or URL.startswith("urlshorten.in") or second:
         URL = SECOND_SHORTLINK_URL
         API = SECOND_SHORTLINK_API
-    if URL == "shrinkmeio":
+    if URL == "api.shrinkme.io":
         # method 1:
         # https = link.split(":")[0] #splitting https or http from link
         # if "http" == https: #if https == "http":
@@ -639,7 +639,7 @@ async def get_verify_shorted_link(link):
         https = "https"
         link = link.replace("http", https)
 
-    if URL == "shrinkme.io":
+    if URL == "api.shrinkme.io":
         url = f"https://{URL}/shortLink"
         params = {"token": API,
                   "format": "json",
